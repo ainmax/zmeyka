@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)file:///E:/MyGameJs+.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>MyGame</title>
+    <style>
+        #myDiv {
+            float: right;
+            margin-right: 400px;
+            margin-top: 10px;
+            background-color: grey;
+            transition: opacity 2s;
+        }
+
+        .move {
+            transition: background-color 0s;
+            background: linear-gradient(120deg, darkgrey, white);
+        }
+
+        #jjS {
+            transition: opacity 1s;
+        }
+
+        .jjS {
+            transition: opacity 1s;
+            margin-top: 0px;
+        }
+
+        #kl {
+            transition: opacity 1s;
+        }
+
+        #dedushka {
+            transition: opacity 1s;
+        }
+
+        #teta {
+            transition: opacity 1s;
+        }
+
+        #exit {
+            transition: opacity 1s;
+        }
+
+        #myBody {
+            transition: opacity 1s;
+        }
+    </style>
+</head>
+
+<body style="text-align: center">
+    <div id="myBody"></div>
+    <div id="teta">
+        <form action="javascript: babushka();">
+            <button style="font-size: 100px; margin-top: 270px;">Play</button>
+        </form><br>
+        <input type="text" id="name1" style="float: left; margin-left: 560px;">
+        <form action="javascript: name();"><button style="margin-right: 550px;">Name</button></form>
+        <p id="nh" style="font-size: 30px;">The best time: - </p>
+    </div>
+    <div id="dedushka" style="display: none; opacity: 0;">
+        <div id="myDiv" style="display: inline; background-color: grey; min-width: 557px;">
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="71">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="72">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="73">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="74">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="75">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="76">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="77">
+            </div><br>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="61">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="62">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="63">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="64">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="65">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="66">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="67">
+            </div><br>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="51">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="52">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="53">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="54">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="55">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="56">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="57">
+            </div><br>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="41">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="42">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="43">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="44">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="45">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="46">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="47">
+            </div><br>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="31">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="32">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="33">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="34">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="35">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="36">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="37">
+            </div><br>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="21">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="22">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="23">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="24">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="25">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="26">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="27">
+            </div><br>
+            <div class="move" style="display: inline-block; padding: 40px; background: black; border: 4px solid black;"
+                id="11">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="12">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="13">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="14">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="15">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="16">
+            </div>
+            <div class="move"
+                style="display: inline-block; padding: 38px; background-color: white; border: 4px solid black;" id="17">
+            </div>
+        </div>
+        <p id="hih" class="jjS" style="font-family: cursive; font-size: 40px;">Score: 0/10</p>
+        <p id="timer1" class="jjS" style="font-family: cursive; font-size: 40px;">Timer: 15</p>
+        <div id="hgf"></div>
+    </div>
+
+    <script>
+        var s = false;
+        var flag;
+        var flag1;
+        var flag2;
+        var flag3;
+        var flag4;
+        var flag5;
+        var flag6;
+        var flag0;
+        var miniflag;
+        var miniflag2;
+        var yx;
+        var do1;
+        var do2;
+        var do3;
+        var do4;
+        var do5;
+        var do6;
+        var hum;
+        var tum;
+        var i;
+        var k;
+        var k2;
+        var call;
+        var uy;
+        var timer;
+        var po;
+        var z;
+        var t;
+        var interval;
+        var x = 15;
+        var c = true;
+        var j = false;
+        var b;
+        var b2;
+        function errorWhite() {
+            if (flag2) {
+                if (i > 5) {
+                    document.getElementById(`${do1}`).style = "display: inline-block; padding: 38px; background: linear-gradient(120deg, darkgrey, white) !important; border: 4px solid black;"
+                }
+                flag2 = false;
+                flag3 = true;
+                flag4 = false;
+                flag5 = false;
+                flag6 = false;
+            } else if (flag3) {
+                if (i > 5) {
+                    document.getElementById(`${do2}`).style = "display: inline-block; padding: 38px; background: linear-gradient(120deg, darkgrey, white) !important; border: 4px solid black;"
+                }
+                flag2 = false;
+                flag3 = false;
+                flag4 = true;
+                flag5 = false;
+                flag6 = false;
+            } else if (flag4) {
+                if (i > 5) {
+                    document.getElementById(`${do3}`).style = "display: inline-block; padding: 38px; background: linear-gradient(120deg, darkgrey, white) !important; border: 4px solid black;"
+                }
+                flag2 = false;
+                flag3 = false;
+                flag4 = false;
+                flag5 = true;
+                flag6 = false;
+            } else if (flag5) {
+                if (i > 5) {
+                    document.getElementById(`${do4}`).style = "display: inline-block; padding: 38px; background: linear-gradient(120deg, darkgrey, white) !important; border: 4px solid black;"
+                }
+                flag2 = false;
+                flag3 = false;
+                flag4 = false;
+                flag5 = false;
+                flag6 = true;
+            } else if (flag6) {
+                if (i > 5) {
+                    document.getElementById(`${do5}`).style = "display: inline-block; padding: 38px; background: linear-gradient(120deg, darkgrey, white) !important; border: 4px solid black;"
+                }
+                flag2 = false;
+                flag3 = false;
+                flag4 = false;
+                flag5 = false;
+                flag6 = false;
+            } else {
+                if (i > 5) {
+                    document.getElementById(`${do6}`).style = "display: inline-block; padding: 38px; background: linear-gradient(120deg, darkgrey, white) !important; border: 4px solid black;"
+                }
+                flag2 = true;
+                flag3 = false;
+                flag4 = false;
+                flag5 = false;
+                flag6 = false;
+            }
+            i = i + 1;
+        }
+        function errorUp() {
+            if (yx + 10 < 78 && yx + 10 > 10) {
+                errorWhite();
+                if (z) {
+                    z = false;
+                    console.log("Error");
+                    timer = timer - 0.1;
+                    document.getElementById("timer1").innerHTML = `Timer: ${timer}`
+                    intervalH = setInterval(timer5, 100);
+                }
+                document.getElementById(`${yx + 10}`).style = "display: inline-block; padding: 38px; background: linear-gradient(0deg, black, rgb(85, 85, 85)) !important; border: 4px solid black;"
+                if (flag) {
+                    do1 = yx;
+                    flag = false;
+                    flag1 = true;
+                    flaf0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag1) {
+                    do2 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = true;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag0) {
+                    do3 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = true;
+                    miniflag2 = false;
+                } else if (miniflag) {
+                    do4 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = true;
+                } else if (miniflag2) {
+                    do5 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else {
+                    do6 = yx;
+                    flag = true;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                }
+                document.getElementById(`${do1}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do2}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do3}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do4}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do5}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do6}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                yx = yx + 10;
+                dod();
+                win();
+                fogot();
+            } else {
+                yx = yx;
+            }
+        }
+        function errorDown() {
+            if (yx - 10 > 10 && yx - 10 < 78) {
+                errorWhite();
+                if (z) {
+                    z = false;
+                    console.log("Error");
+                    timer = timer - 0.1;
+                    document.getElementById("timer1").innerHTML = `Timer: ${timer}`
+                    intervalH = setInterval(timer5, 100);
+                }
+                document.getElementById(`${yx - 10}`).style = "display: inline-block; padding: 38px; background: linear-gradient(180deg, black, rgb(85, 85, 85)) !important; border: 4px solid black;"
+                if (flag) {
+                    do1 = yx;
+                    flag = false;
+                    flag1 = true;
+                    flaf0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag1) {
+                    do2 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = true;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag0) {
+                    do3 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = true;
+                    miniflag2 = false;
+                } else if (miniflag) {
+                    do4 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = true;
+                } else if (miniflag2) {
+                    do5 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else {
+                    do6 = yx;
+                    flag = true;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                }
+                document.getElementById(`${do1}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do2}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do3}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do4}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do5}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do6}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                yx = yx - 10;
+                dod();
+                win();
+                fogot();
+            } else {
+                yx = yx;
+            }
+        }
+        function errorRight() {
+            if ((yx + 1) % 10 > 0 && (yx + 1) % 10 < 8) {
+                errorWhite();
+                if (z) {
+                    z = false;
+                    console.log("Error");
+                    timer = timer - 0.1;
+                    document.getElementById("timer1").innerHTML = `Timer: ${timer}`
+                    intervalH = setInterval(timer5, 100);
+                }
+                document.getElementById(`${yx + 1}`).style = "display: inline-block; padding: 38px; background: linear-gradient(90deg, black, rgb(85, 85, 85)) !important; border: 4px solid black;"
+                if (flag) {
+                    do1 = yx;
+                    flag = false;
+                    flag1 = true;
+                    flaf0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag1) {
+                    do2 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = true;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag0) {
+                    do3 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = true;
+                    miniflag2 = false;
+                } else if (miniflag) {
+                    do4 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = true;
+                } else if (miniflag2) {
+                    do5 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else {
+                    do6 = yx;
+                    flag = true;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                }
+                document.getElementById(`${do1}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do2}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do3}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do4}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do5}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do6}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                yx = yx + 1;
+                dod();
+                win();
+                fogot();
+            } else {
+                yx = yx;
+            }
+        }
+        function errorLeft() {
+            if ((yx - 1) % 10 > 0 && (yx - 1) % 10 < 8) {
+                errorWhite();
+                if (z) {
+                    z = false;
+                    console.log("Error");
+                    timer = timer - 0.1;
+                    document.getElementById("timer1").innerHTML = `Timer: ${timer}`
+                    intervalH = setInterval(timer5, 100);
+                }
+                document.getElementById(`${yx - 1}`).style = "display: inline-block; padding: 38px; background: linear-gradient(270deg, black, rgb(85, 85, 85)) !important; border: 4px solid black;"
+                if (flag) {
+                    do1 = yx;
+                    flag = false;
+                    flag1 = true;
+                    flaf0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag1) {
+                    do2 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = true;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag0) {
+                    do3 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = true;
+                    miniflag2 = false;
+                } else if (miniflag) {
+                    do4 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = true;
+                } else if (miniflag2) {
+                    do5 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else {
+                    do6 = yx;
+                    flag = true;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                }
+                document.getElementById(`${do1}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do2}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do3}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do4}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do5}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                document.getElementById(`${do6}`).style = "display: inline-block; padding: 38px; background: black; border: 4px solid black;"
+                yx = yx - 1;
+                dod();
+                fogot();
+                win();
+            } else {
+                yx = yx;
+            }
+        }
+        function fggf() {
+            document.getElementById("myDiv").style = "display: none;"
+            document.getElementById("myBody").innerHTML = "<p id='jjS' style='font-size: 100px; text-align: center; color: red; margin-top: 150px; opacity: 0;'>Game Over!</p>"
+            document.getElementById("hgf").innerHTML = "<form action='javascript: retry();' ><button id='kl' style='font-size: 60px; width: 300px; opacity: 0; float: left;'>  Retry  </button></form><form action='javascript: anti();' ><button id='exit' style='font-size: 60px; width: 300px; opacity: 0;'>  Exit  </button></form>"
+            setTimeout(type, 100);
+        }
+        function fggf2() {
+            document.getElementById("myDiv").style = "display: none;"
+            document.getElementById("myBody").innerHTML = "<p id='jjS' style='font-size: 100px; text-align: center; color: red; margin-top: 150px; opacity: 0;'>You win!</p>"
+            document.getElementById("hgf").innerHTML = "<form action='javascript: retry();' ><button id='kl' style='font-size: 60px; width: 300px; opacity: 0; float: left;'>  Retry  </button></form><form action='javascript: anti();' ><button id='exit' style='font-size: 60px; width: 300px; opacity: 0;'>  Exit  </button></form>"
+            setTimeout(type, 100);
+        }
+        function fggf3() {
+            document.getElementById("myDiv").style = "display: none;"
+            document.getElementById("myBody").innerHTML = "<p id='jjS' style='font-size: 100px; text-align: center; color: red; margin-top: 150px; opacity: 0;'>Game over</p>"
+            document.getElementById("hgf").innerHTML = "<form action='javascript: retry();' ><button id='kl' style='font-size: 60px; width: 300px; opacity: 0; float: left;'>  Retry  </button></form><form action='javascript: anti();' ><button id='exit' style='font-size: 60px; width: 300px; opacity: 0;'>  Exit  </button></form>"
+            document.getElementById("timer1").innerHTML = "Time over!"
+            setTimeout(type2, 100);
+        }
+        function type() {
+            document.getElementById("myBody").style = "opacity: 1;"
+            document.getElementById("jjS").style = "font-size: 100px; text-align: center; color: red; margin-top: 150px; opacity: 1;"
+            document.getElementById("hih").style = "font-family: cursive; font-size: 40px; opacity: 1;"
+            document.getElementById("kl").style = " margin-left: 340px; font-size: 60px; width: 300px; opacity: 1; float: left;"
+            document.getElementById("exit").style = " margin-right: 340px; font-size: 60px; width: 300px; opacity: 1; float: right;"
+            document.getElementById("timer1").innerHTML = `Time: ${(15 * 10 - timer * 10) / 10}`
+            document.getElementById("timer1").style = "font-family: cursive; font-size: 40px; opacity: 1;"
+        }
+        function type2() {
+            document.getElementById("myBody").style = "opacity: 1;"
+            document.getElementById("jjS").style = "font-size: 100px; text-align: center; color: red; margin-top: 150px; opacity: 1;"
+            document.getElementById("hih").style = "font-family: cursive; font-size: 40px; opacity: 1;"
+            document.getElementById("kl").style = " margin-left: 340px; font-size: 60px; width: 300px; opacity: 1; float: left;"
+            document.getElementById("exit").style = " margin-right: 340px; font-size: 60px; width: 300px; opacity: 1; float: right;"
+            document.getElementById("timer1").style = "font-family: cursive; font-size: 40px; opacity: 1;"
+        }
+        function fogot() {
+            if (yx == do4 || yx == do3 || yx == do5 || yx == do2 || yx == do1 || yx == do6) {
+                po = false;
+                k = k2;
+                po = false;
+                flag = true;
+                flag1 = false;
+                flag2 = false;
+                flag3 = false;
+                flag4 = false;
+                flag5 = false;
+                flag6 = false;
+                flag0 = false;
+                miniflag = false;
+                miniflag2 = false;
+                do1 = null;
+                do2 = null;
+                do3 = null;
+                do4 = null;
+                do5 = null;
+                do6 = null;
+                i = 0;
+                call = 0;
+                yx = 100;
+                k = 0;
+                clearInterval(intervalH);
+                document.getElementById("hih").style = "font-family: cursive; font-size: 40px; opacity: 0;"
+                document.getElementById("timer1").style = "font-family: cursive; font-size: 40px; opacity: 0;"
+                document.getElementById("myDiv").style = "opacity: 0;"
+                setTimeout(fggf, 1400);
+            }
+        }
+        function fogot4() {
+            po = false;
+            k = k2;
+            po = false;
+            flag = true;
+            flag1 = false;
+            flag2 = false;
+            flag3 = false;
+            flag4 = false;
+            flag5 = false;
+            flag6 = false;
+            flag0 = false;
+            miniflag = false;
+            miniflag2 = false;
+            do1 = null;
+            do2 = null;
+            do3 = null;
+            do4 = null;
+            do5 = null;
+            do6 = null;
+            i = 0;
+            call = 0;
+            yx = 100;
+            k = 0;
+            clearInterval(intervalH);
+            document.getElementById("hih").style = "font-family: cursive; font-size: 40px; opacity: 0;"
+            document.getElementById("timer1").style = "font-family: cursive; font-size: 40px; opacity: 0;"
+            document.getElementById("myDiv").style = "opacity: 0;"
+            setTimeout(fggf3, 1400);
+        }
+        function apple() {
+            if (uy) {
+                while (yx == (hum + 1) * 10 + (tum + 1) || do1 == (hum + 1) * 10 + (tum + 1) || do2 == (hum + 1) * 10 + (tum + 1) || do3 == (hum + 1) * 10 + (tum + 1) || do4 == (hum + 1) * 10 + (tum + 1) || do5 == (hum + 1) * 10 + (tum + 1) || do6 == (hum + 1) * 10 + (tum + 1)) {
+                    hum = getRandomInt(6);
+                    tum = getRandomInt(6);
+                    console.log(hum);
+                    console.log(tum);
+                }
+                document.getElementById(`${(hum + 1) * 10 + (tum + 1)}`).style = "display: inline-block; padding: 38px; background: linear-gradient(120deg, red, yellow) !important; border: 4px solid black;"
+                k = (hum + 1) * 10 + (tum + 1);
+                k2 = k;
+            }
+        }
+        function timer5() {
+            if (timer == 0) {
+                dod();
+                fogot4();
+            } else {
+                timer = (timer * 10 - 0.1 * 10) / 10;
+                if (timer % 1 == 0) {
+                    document.getElementById("timer1").innerHTML = `Timer: ${timer + ".0"}`
+                } else {
+                    document.getElementById("timer1").innerHTML = `Timer: ${timer}`
+                }
+            }
+        }
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+        function win() {
+            if (yx == k) {
+                call++;
+                document.getElementById("hih").innerHTML = `<p id="hih" class="jjS" style="font-family: cursive; font-size: 40px;">Score: ${call}/10</p>`
+            }
+            if (call == 10) {
+                if ((15 * 10 - timer * 10) / 10 <= x) {
+                    x = (15 * 10 - timer * 10) / 10;
+                    document.getElementById("nh").innerHTML = `${b}\'s best time: ${x}`
+                }
+                po = false;
+                uy = false;
+                k = k2;
+                po = false;
+                flag = true;
+                flag1 = false;
+                flag2 = false;
+                flag3 = false;
+                flag4 = false;
+                flag5 = false;
+                flag6 = false;
+                flag0 = false;
+                miniflag = false;
+                miniflag2 = false;
+                do1 = null;
+                do2 = null;
+                do3 = null;
+                do4 = null;
+                do5 = null;
+                do6 = null;
+                i = 0;
+                yx = 100;
+                k = 0;
+                clearInterval(intervalH);
+                document.getElementById("hih").style = "font-family: cursive; font-size: 40px; opacity: 0;"
+                document.getElementById("timer1").style = "font-family: cursive; font-size: 40px; opacity: 0;"
+                document.getElementById("myDiv").style = "opacity: 0;"
+                setTimeout(fggf2, 1400);
+            }
+        }
+        function retry() {
+            uy = true;
+            flag = true;
+            flag1 = false;
+            flag2 = true;
+            flag3 = false;
+            flag4 = false;
+            flag5 = false;
+            flag6 = false;
+            flag0 = false;
+            miniflag = false;
+            miniflag2 = false;
+            yx = 11;
+            do1 = yx;
+            do2 = yx;
+            do3 = yx;
+            do4 = yx;
+            do5 = yx;
+            do6 = yx;
+            hum = 0;
+            tum = 0;
+            i = 0;
+            call = 0;
+            timer = 15;
+            z = true;
+            po = false;
+            document.getElementById("timer1").innerHTML = `Timer: ${timer}`
+            document.getElementById("myBody").innerHTML = ""
+            document.getElementById("hgf").innerHTML = ""
+            document.getElementById("myDiv").style = "display: inline; background-color: grey; min-width: 557px;"
+            document.getElementById(`${yx2}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById(`${do12}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById(`${do22}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById(`${do32}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById(`${do42}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById(`${do52}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById(`${do62}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById("11").style = "display: inline-block; padding: 38px; background: black !important; border: 4px solid black !important;"
+            document.getElementById("hih").innerHTML = `<p id="hih" class="jjS" style="font-family: cursive; font-size: 40px;">Score: ${call}/10</p>`
+            document.getElementById(`${k2}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+        }
+        function anti() {
+            document.getElementById("dedushka").style = "opacity: 0;"
+            document.getElementById("myBody").style = "opacity: 0;"
+            setTimeout(gggg, 1000);
+        }
+        function gggg() {
+            document.getElementById("myBody").innerHTML = ""
+            document.getElementById("hgf").innerHTML = ""
+            document.getElementById("dedushka").style = "opacity: 0; display: none;"
+            document.getElementById("teta").style = "display: inline; opacity: 1;"
+            c = true;
+        }
+        function dod() {
+            yx2 = yx;
+            do12 = do1;
+            do22 = do2;
+            do32 = do3;
+            do42 = do4;
+            do52 = do5;
+            do62 = do6;
+        }
+        function babushka() {
+            if (c) {
+                c = false;
+                document.getElementById("teta").style = " opacity: 0;"
+                setTimeout(type100, 800);
+            }
+        }
+        function type100() {
+            document.getElementById("teta").style = "opacity: 0; display: none;"
+            document.getElementById("dedushka").style = "display: inline; opacity: 0;"
+            document.getElementById("hih").style = "font-family: cursive; font-size: 40px; opacity: 0;"
+            document.getElementById("timer1").style = "font-family: cursive; font-size: 40px; opacity: 0;"
+            setTimeout(yre, 10);
+        }
+        function name() {
+            b2 = b;
+            b = document.getElementById("name1").value;
+            if (b2 != b) {
+                x = 15;
+            }
+        }
+        function yre() {
+            document.getElementById("dedushka").style = "display: inline; opacity: 1;"
+            document.getElementById("hih").style = "font-family: cursive; font-size: 40px; opacity: 1;"
+            document.getElementById("timer1").style = "font-family: cursive; font-size: 40px; opacity: 1;"
+            flag = true;
+            flag1 = false;
+            flag2 = true;
+            flag3 = false;
+            flag4 = false;
+            flag5 = false;
+            flag6 = false;
+            flag0 = false;
+            miniflag = false;
+            miniflag2 = false;
+            yx = 11;
+            do1 = yx;
+            do2 = yx;
+            do3 = yx;
+            do4 = yx;
+            do5 = yx;
+            do6 = yx;
+            hum = 0;
+            tum = 0;
+            i = 0;
+            call = 0;
+            uy = true;
+            timer = 15;
+            po = false;
+            z = true;
+            t = true;
+            interval = setInterval(apple, 100);
+            if (!s) {
+                dod();
+                s = true;
+            }
+            document.getElementById("timer1").innerHTML = `Timer: ${timer}`
+            document.getElementById("myBody").innerHTML = ""
+            document.getElementById("hgf").innerHTML = ""
+            document.getElementById("myDiv").style = "display: inline; background-color: grey; min-width: 557px;"
+            document.getElementById(`${yx2}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById(`${do12}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById(`${do22}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById(`${do32}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById(`${do42}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById(`${do52}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById(`${do62}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            document.getElementById("11").style = "display: inline-block; padding: 38px; background: black !important; border: 4px solid black !important;"
+            document.getElementById("hih").innerHTML = `<p id="hih" class="jjS" style="font-family: cursive; font-size: 40px;">Score: ${call}/10</p>`
+            if (j) {
+                document.getElementById(`${k2}`).style = "background: linear-gradient(120deg, darkgrey, white); display: inline-block; padding: 38px; border: 4px solid black;"
+            }
+            j = true;
+        }
+        document.addEventListener('keydown', function (event) {
+            if (event.code == 'ArrowUp') {
+                errorUp();
+            }
+        });
+        document.addEventListener('keydown', function (event) {
+            if (event.code == 'ArrowLeft') {
+                errorLeft();
+            }
+        });
+        document.addEventListener('keydown', function (event) {
+            if (event.code == 'ArrowDown') {
+                errorDown();
+
+            }
+        });
+        document.addEventListener('keydown', function (event) {
+            if (event.code == 'ArrowRight') {
+                errorRight();
+
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
