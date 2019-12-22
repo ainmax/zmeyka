@@ -312,7 +312,6 @@
                 errorWhite();
                 if (z) {
                     z = false;
-                    console.log("Error");
                     timer = timer - 0.1;
                     document.getElementById("timer1").innerHTML = `Timer: ${timer}`
                     intervalH = setInterval(timer5, 100);
@@ -380,7 +379,6 @@
                 errorWhite();
                 if (z) {
                     z = false;
-                    console.log("Error");
                     timer = timer - 0.1;
                     document.getElementById("timer1").innerHTML = `Timer: ${timer}`
                     intervalH = setInterval(timer5, 100);
@@ -448,7 +446,6 @@
                 errorWhite();
                 if (z) {
                     z = false;
-                    console.log("Error");
                     timer = timer - 0.1;
                     document.getElementById("timer1").innerHTML = `Timer: ${timer}`
                     intervalH = setInterval(timer5, 100);
@@ -516,7 +513,6 @@
                 errorWhite();
                 if (z) {
                     z = false;
-                    console.log("Error");
                     timer = timer - 0.1;
                     document.getElementById("timer1").innerHTML = `Timer: ${timer}`
                     intervalH = setInterval(timer5, 100);
@@ -682,8 +678,6 @@
                 while (yx == (hum + 1) * 10 + (tum + 1) || do1 == (hum + 1) * 10 + (tum + 1) || do2 == (hum + 1) * 10 + (tum + 1) || do3 == (hum + 1) * 10 + (tum + 1) || do4 == (hum + 1) * 10 + (tum + 1) || do5 == (hum + 1) * 10 + (tum + 1) || do6 == (hum + 1) * 10 + (tum + 1)) {
                     hum = getRandomInt(6);
                     tum = getRandomInt(6);
-                    console.log(hum);
-                    console.log(tum);
                 }
                 document.getElementById(`${(hum + 1) * 10 + (tum + 1)}`).style = "display: inline-block; padding: 38px; background: linear-gradient(120deg, red, yellow) !important; border: 4px solid black;"
                 k = (hum + 1) * 10 + (tum + 1);
