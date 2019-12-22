@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0025)file:///E:/MyGameJs+.html -->
 <html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <title>Zmeyka</title>
+    <title>MyGame</title>
     <style>
         #myDiv {
             float: right;
@@ -56,8 +55,7 @@
         <form action="javascript: babushka();">
             <button style="font-size: 100px; margin-top: 270px;">Play</button>
         </form><br>
-        <input type="text" id="name1" style="float: left; margin-left: 560px;">
-        <form action="javascript: name();"><button style="margin-right: 550px;">Name</button></form>
+        <input type="text" id="name1" style="text-align: center;">
         <p id="nh" style="font-size: 30px;">The best time: - </p>
     </div>
     <div id="dedushka" style="display: none; opacity: 0;">
@@ -814,6 +812,14 @@
             if (c) {
                 c = false;
                 document.getElementById("teta").style = " opacity: 0;"
+                b2 = b;
+                b = document.getElementById("name1").value;
+                if (b2 != b) {
+                    x = 15;
+                }
+                if( b == "" ){
+                    b = "NoName";
+                }
                 setTimeout(type100, 800);
             }
         }
@@ -823,13 +829,6 @@
             document.getElementById("hih").style = "font-family: cursive; font-size: 40px; opacity: 0;"
             document.getElementById("timer1").style = "font-family: cursive; font-size: 40px; opacity: 0;"
             setTimeout(yre, 10);
-        }
-        function name() {
-            b2 = b;
-            b = document.getElementById("name1").value;
-            if (b2 != b) {
-                x = 15;
-            }
         }
         function yre() {
             document.getElementById("dedushka").style = "display: inline; opacity: 1;"

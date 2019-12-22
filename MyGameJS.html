@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>MyGame</title>
+    <style>
+        .myDiv {
+            float: right;
+            margin-right: 400px;
+            margin-top: 40px;
+            background-color: grey;
+        }
+
+        .move {
+            transition: background-color 0.15s;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="myDiv">
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="51">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="52">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="53">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="54">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="55">
+        </div><br>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="41">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="42">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="43">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="44">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="45">
+        </div><br>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="31">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="32">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="33">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="34">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="35">
+        </div><br>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="21">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="22">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="23">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="24">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="25">
+        </div><br>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: black !important; border: 4px solid black;"
+            id="11">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="12">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="13">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="14">
+        </div>
+        <div class="move"
+            style="display: inline-block; padding: 50px; background-color: white; border: 4px solid black;" id="15">
+        </div>
+    </div>
+
+    <script>
+        var flag = true;
+        var flag1 = false;
+        var flag2 = true;
+        var flag3 = false;
+        var flag4 = false;
+        var flag5 = false;
+        var flag6 = false;
+        var flag0 = false;
+        var miniflag = false;
+        var miniflag2 = false;
+        var yx = 11;
+        var do1 = yx;
+        var do2 = yx;
+        var do3 = yx;
+        var do4 = yx;
+        var do5 = yx;
+        var do6 = yx;
+
+        var i = 0;
+        function errorWhite() {
+            if (flag2) {
+                if (i > 5) {
+                    document.getElementById(`${do1}`).style = "display: inline-block; padding: 50px; background-color: white !important; border: 4px solid black;"
+                }
+                flag2 = false;
+                flag3 = true;
+                flag4 = false;
+                flag5 = false;
+                flag6 = false;
+            } else if (flag3) {
+                if (i > 5) {
+                    document.getElementById(`${do2}`).style = "display: inline-block; padding: 50px; background-color: white !important; border: 4px solid black;"
+                }
+                flag2 = false;
+                flag3 = false;
+                flag4 = true;
+                flag5 = false;
+                flag6 = false;
+            } else if (flag4) {
+                if (i > 5) {
+                    document.getElementById(`${do3}`).style = "display: inline-block; padding: 50px; background-color: white !important; border: 4px solid black;"
+                }
+                flag2 = false;
+                flag3 = false;
+                flag4 = false;
+                flag5 = true;
+                flag6 = false;
+            } else if (flag5) {
+                if (i > 5) {
+                    document.getElementById(`${do4}`).style = "display: inline-block; padding: 50px; background-color: white !important; border: 4px solid black;"
+                }
+                flag2 = false;
+                flag3 = false;
+                flag4 = false;
+                flag5 = false;
+                flag6 = true;
+            } else if (flag6) {
+                if (i > 5) {
+                    document.getElementById(`${do5}`).style = "display: inline-block; padding: 50px; background-color: white !important; border: 4px solid black;"
+                }
+                flag2 = false;
+                flag3 = false;
+                flag4 = false;
+                flag5 = false;
+                flag6 = false;
+            } else {
+                if (i > 5) {
+                    document.getElementById(`${do6}`).style = "display: inline-block; padding: 50px; background-color: white !important; border: 4px solid black;"
+                }
+                flag2 = true;
+                flag3 = false;
+                flag4 = false;
+                flag5 = false;
+                flag6 = false;
+            }
+            i = i + 1;
+        }
+        function errorUp() {
+            if (yx + 10 < 56 && yx + 10 > 10) {
+                errorWhite();
+                document.getElementById(`${yx + 10}`).style = "display: inline-block; padding: 50px; background-color: dimgrey !important; border: 4px solid black;"
+                if (flag) {
+                    do1 = yx;
+                    flag = false;
+                    flag1 = true;
+                    flaf0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag1) {
+                    do2 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = true;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag0) {
+                    do3 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = true;
+                    miniflag2 = false;
+                } else if (miniflag) {
+                    do4 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = true;
+                } else if (miniflag2) {
+                    do5 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else {
+                    do6 = yx;
+                    flag = true;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                }
+                document.getElementById(`${do1}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do2}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do3}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do4}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do5}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do6}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                yx = yx + 10;
+                fogot();
+            } else {
+                yx = yx;
+            }
+        }
+        function errorDown() {
+            if (yx - 10 > 10 && yx - 10 < 56) {
+                errorWhite();
+                document.getElementById(`${yx - 10}`).style = "display: inline-block; padding: 50px; background-color: dimgrey !important; border: 4px solid black;"
+                if (flag) {
+                    do1 = yx;
+                    flag = false;
+                    flag1 = true;
+                    flaf0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag1) {
+                    do2 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = true;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag0) {
+                    do3 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = true;
+                    miniflag2 = false;
+                } else if (miniflag) {
+                    do4 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = true;
+                } else if (miniflag2) {
+                    do5 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else {
+                    do6 = yx;
+                    flag = true;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                }
+                document.getElementById(`${do1}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do2}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do3}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do4}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do5}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do6}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                yx = yx - 10;
+                fogot();
+            } else {
+                yx = yx;
+            }
+        }
+        function errorRight() {
+            if ((yx + 1) % 10 > 0 && (yx + 1) % 10 < 6) {
+                errorWhite();
+                document.getElementById(`${yx + 1}`).style = "display: inline-block; padding: 50px; background-color: dimgrey !important; border: 4px solid black;"
+                if (flag) {
+                    do1 = yx;
+                    flag = false;
+                    flag1 = true;
+                    flaf0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag1) {
+                    do2 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = true;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag0) {
+                    do3 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = true;
+                    miniflag2 = false;
+                } else if (miniflag) {
+                    do4 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = true;
+                } else if (miniflag2) {
+                    do5 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else {
+                    do6 = yx;
+                    flag = true;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                }
+                document.getElementById(`${do1}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do2}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do3}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do4}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do5}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do6}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                yx = yx + 1;
+                fogot();
+            } else {
+                yx = yx;
+            }
+        }
+        function errorLeft() {
+            if ((yx - 1) % 10 > 0 && (yx - 1) % 10 < 6) {
+                errorWhite();
+                document.getElementById(`${yx - 1}`).style = "display: inline-block; padding: 50px; background-color: dimgrey !important; border: 4px solid black;"
+                if (flag) {
+                    do1 = yx;
+                    flag = false;
+                    flag1 = true;
+                    flaf0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag1) {
+                    do2 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = true;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else if (flag0) {
+                    do3 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = true;
+                    miniflag2 = false;
+                } else if (miniflag) {
+                    do4 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = true;
+                } else if (miniflag2) {
+                    do5 = yx;
+                    flag = false;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                } else {
+                    do6 = yx;
+                    flag = true;
+                    flag1 = false;
+                    flag0 = false;
+                    miniflag = false;
+                    miniflag2 = false;
+                }
+                document.getElementById(`${do1}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do2}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do3}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do4}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do5}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                document.getElementById(`${do6}`).style = "display: inline-block; padding: 50px; background-color: black; border: 4px solid black;"
+                yx = yx - 1;
+                fogot();
+            } else {
+                yx = yx;
+            }
+        }
+        function fogot() {
+            if (yx == do4 || yx == do3 || yx == do5 || yx == do2 || yx == do1 || yx == do6) {
+                document.location.href = ""
+            }
+        }
+        document.addEventListener('keydown', function (event) {
+            if (event.code == 'ArrowUp') {
+                errorUp();
+            }
+        });
+        document.addEventListener('keydown', function (event) {
+            if (event.code == 'ArrowLeft') {
+                errorLeft();
+            }
+        });
+        document.addEventListener('keydown', function (event) {
+            if (event.code == 'ArrowDown') {
+                errorDown();
+            }
+        });
+        document.addEventListener('keydown', function (event) {
+            if (event.code == 'ArrowRight') {
+                errorRight();
+            }
+        });
+    </script>
+</body>
+
+</html>
